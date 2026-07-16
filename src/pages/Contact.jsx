@@ -97,6 +97,7 @@ export default function Contact() {
             type="submit"
             className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600"
           >
+          
             Send Message 📲
           </button>
         </form>
