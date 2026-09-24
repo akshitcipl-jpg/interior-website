@@ -28,7 +28,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phoneNumber = "919193195713";
+    const phoneNumber = "917668821088";
 
     const text = `Name: ${form.name}%0AEmail: ${form.email}%0AMessage: ${form.message}`;
 

@@ -16,15 +16,31 @@ function App() {
     <BrowserRouter>
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/kitchen" element={<Kitchen />} />
-        <Route path="/bedroom" element={<Bedroom />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/gallery/:id" element={<GalleryDetails />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <main>
+        <Routes>
+
+          <Route path="/" element={<Home />} />
+
+          <Route path="/about" element={<About />} />
+
+          <Route path="/kitchen" element={<Kitchen />} />
+
+          <Route path="/bedroom" element={<Bedroom />} />
+
+          <Route path="/gallery" element={<Gallery />} />
+
+          <Route
+            path="/gallery/:id"
+            element={<GalleryDetails />}
+          />
+
+          <Route path="/contact" element={<Contact />} />
+
+          {/* Unknown URL */}
+          <Route path="*" element={<Home />} />
+
+        </Routes>
+      </main>
 
       <Footer />
     </BrowserRouter>
